@@ -32,7 +32,7 @@
                     <rect key="frame" x="16" y="462" width="361" height="48"/>
                     <color key="backgroundColor" name="CardColor"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <accessibility key="accessibilityConfiguration" hint="Password" label="Password"/>
+                    <accessibility key="accessibilityConfiguration" hint="Password" identifier="passwordTexeInput" label="Password"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="Quc-uU-yOv"/>
                         <constraint firstAttribute="height" constant="48" id="uFL-fg-rZs"/>
@@ -43,6 +43,7 @@
                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JOG-o9-NY9">
                     <rect key="frame" x="16" y="402" width="361" height="48"/>
                     <color key="backgroundColor" name="CardColor"/>
+                    <accessibility key="accessibilityConfiguration" identifier="emailTextInput"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="Jo1-XK-rXb"/>
                         <constraint firstAttribute="height" constant="48" id="L5a-Lx-9Go"/>

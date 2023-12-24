@@ -18,6 +18,10 @@
 		504368642B37792A00454903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504368632B37792A00454903 /* Assets.xcassets */; };
 		504368682B3785B800454903 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504368662B3785B800454903 /* RegisterViewController.swift */; };
 		504368692B3785B800454903 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504368672B3785B800454903 /* RegisterViewController.xib */; };
+		5043686B2B384D3900454903 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043686A2B384D3900454903 /* LoginViewModel.swift */; };
+		5043686D2B384D7000454903 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043686C2B384D7000454903 /* User.swift */; };
+		5043686F2B384D8C00454903 /* Finance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043686E2B384D8C00454903 /* Finance.swift */; };
+		504368712B384F3500454903 /* Expence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504368702B384F3500454903 /* Expence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		504368632B37792A00454903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		504368662B3785B800454903 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		504368672B3785B800454903 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		5043686A2B384D3900454903 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5043686C2B384D7000454903 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5043686E2B384D8C00454903 /* Finance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance.swift; sourceTree = "<group>"; };
+		504368702B384F3500454903 /* Expence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 		504368592B37702000454903 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5043686A2B384D3900454903 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -159,6 +168,9 @@
 		5043685A2B37702800454903 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5043686C2B384D7000454903 /* User.swift */,
+				5043686E2B384D8C00454903 /* Finance.swift */,
+				504368702B384F3500454903 /* Expence.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,9 +333,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				504368712B384F3500454903 /* Expence.swift in Sources */,
 				5043685F2B37735600454903 /* LoginViewController.swift in Sources */,
 				504368282B34D3D900454903 /* AppDelegate.swift in Sources */,
+				5043686D2B384D7000454903 /* User.swift in Sources */,
 				5043682A2B34D3D900454903 /* SceneDelegate.swift in Sources */,
+				5043686F2B384D8C00454903 /* Finance.swift in Sources */,
+				5043686B2B384D3900454903 /* LoginViewModel.swift in Sources */,
 				504368682B3785B800454903 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
