@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="FinanceManager" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-qF-cHT">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfx-s9-TcX">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AET-4X-gCw">
+                                    <rect key="frame" x="16" y="30" width="361" height="189"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finance Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swV-4c-rpc">
+                                    <rect key="frame" x="16" y="239" width="361" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6h-9r-4Yz">
+                                    <rect key="frame" x="16" y="342" width="361" height="48"/>
+                                    <color key="backgroundColor" name="cardColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="lYV-Ta-qVf"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9sq-CF-2Kp">
+                                    <rect key="frame" x="16" y="402" width="361" height="48"/>
+                                    <color key="backgroundColor" name="cardColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="9E5-og-15k"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Repeat Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4zQ-fg-nsM">
+                                    <rect key="frame" x="16" y="462" width="361" height="48"/>
+                                    <color key="backgroundColor" name="cardColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="fua-ti-2Ge"/>
+                                    </constraints>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zep-wl-tQP">
+                                    <rect key="frame" x="16" y="660" width="361" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="DOg-ds-4BO"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        <color key="baseBackgroundColor" name="primaryColor"/>
+                                    </buttonConfiguration>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="background"/>
+                            <constraints>
+                                <constraint firstItem="T6h-9r-4Yz" firstAttribute="top" secondItem="swV-4c-rpc" secondAttribute="bottom" constant="82" id="7le-Us-mfI"/>
+                                <constraint firstAttribute="trailing" secondItem="9sq-CF-2Kp" secondAttribute="trailing" constant="16" id="Aqn-at-cRC"/>
+                                <constraint firstAttribute="trailing" secondItem="4zQ-fg-nsM" secondAttribute="trailing" constant="16" id="Atq-BM-xkt"/>
+                                <constraint firstAttribute="trailing" secondItem="AET-4X-gCw" secondAttribute="trailing" constant="16" id="Fzp-Re-5dB"/>
+                                <constraint firstItem="AET-4X-gCw" firstAttribute="top" secondItem="vfx-s9-TcX" secondAttribute="top" constant="30" id="Ips-dE-diE"/>
+                                <constraint firstAttribute="trailing" secondItem="T6h-9r-4Yz" secondAttribute="trailing" constant="16" id="Mff-W6-yFd"/>
+                                <constraint firstItem="swV-4c-rpc" firstAttribute="top" secondItem="AET-4X-gCw" secondAttribute="bottom" constant="20" id="O2M-sE-AKd"/>
+                                <constraint firstItem="swV-4c-rpc" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="OUl-in-VU3"/>
+                                <constraint firstItem="T6h-9r-4Yz" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="QM0-ZS-dsa"/>
+                                <constraint firstAttribute="trailing" secondItem="swV-4c-rpc" secondAttribute="trailing" constant="16" id="SYM-zA-gWM"/>
+                                <constraint firstItem="zep-wl-tQP" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="Uti-jL-tl8"/>
+                                <constraint firstItem="AET-4X-gCw" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="XAi-mN-eY8"/>
+                                <constraint firstItem="4zQ-fg-nsM" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="ba9-ny-uus"/>
+                                <constraint firstItem="4zQ-fg-nsM" firstAttribute="top" secondItem="9sq-CF-2Kp" secondAttribute="bottom" constant="12" id="fGh-Ea-fLs"/>
+                                <constraint firstItem="9sq-CF-2Kp" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="jta-zH-3WQ"/>
+                                <constraint firstItem="zep-wl-tQP" firstAttribute="top" secondItem="4zQ-fg-nsM" secondAttribute="bottom" constant="150" id="kGp-Eg-RdL"/>
+                                <constraint firstAttribute="trailing" secondItem="zep-wl-tQP" secondAttribute="trailing" constant="16" id="ojy-Am-fOC"/>
+                                <constraint firstItem="9sq-CF-2Kp" firstAttribute="top" secondItem="T6h-9r-4Yz" secondAttribute="bottom" constant="12" id="y8R-hG-SUg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vfx-s9-TcX" secondAttribute="bottom" id="9Tu-DZ-Iw0"/>
+                        <constraint firstItem="vfx-s9-TcX" firstAttribute="height" secondItem="Ycx-qF-cHT" secondAttribute="height" id="9UW-k4-5mc"/>
+                        <constraint firstItem="vfx-s9-TcX" firstAttribute="top" secondItem="Ycx-qF-cHT" secondAttribute="top" id="GyU-bP-d1N"/>
+                        <constraint firstAttribute="trailing" secondItem="vfx-s9-TcX" secondAttribute="trailing" id="bFn-Sa-LjX"/>
+                        <constraint firstItem="vfx-s9-TcX" firstAttribute="leading" secondItem="Ycx-qF-cHT" secondAttribute="leading" id="g3C-rz-fRu"/>
+                        <constraint firstItem="vfx-s9-TcX" firstAttribute="width" secondItem="Ycx-qF-cHT" secondAttribute="width" id="gdk-gP-cIH"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="Ycx-qF-cHT" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="BT4-Md-iFj"/>
+                <constraint firstItem="Ycx-qF-cHT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nhz-2f-L5Q"/>
+                <constraint firstItem="Ycx-qF-cHT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uD1-bD-yjn"/>
+                <constraint firstItem="Ycx-qF-cHT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="uy3-fK-Ft7"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="58.778625954198468" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="187" height="189"/>
+        <namedColor name="background">
+            <color red="0.062745098039215685" green="0.062745098039215685" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cardColor">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="0.85098039215686272" green="0.99607843137254903" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
