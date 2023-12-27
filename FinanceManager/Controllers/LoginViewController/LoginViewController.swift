@@ -6,24 +6,36 @@
 //
 
 import UIKit
+import CustomToastView_swift
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet weak var loginEmailTextField: UITextField!
+    @IBOutlet weak var loginPasswordTextField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        configView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func configView() {
+        loginEmailTextField.attributedPlaceholder = preparePlaceholder(name: "Email")
+        
+        loginPasswordTextField.attributedPlaceholder = preparePlaceholder(name: "Password")
     }
-    */
-
+    
+    @IBAction func signInButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func createAccountButtonPressed(_ sender: UIButton) {
+        let registerController = RegisterViewController()
+        
+        DispatchQueue.main.async {
+            self.navigationController?.pushViewController(registerController, animated: true)
+        }
+    }
+    
 }

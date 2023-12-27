@@ -6,11 +6,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="FinanceManager" customModuleProvider="target">
             <connections>
+                <outlet property="loginEmailTextField" destination="JOG-o9-NY9" id="qHY-VE-4kM"/>
+                <outlet property="loginPasswordTextField" destination="y5u-Fi-IoD" id="eJp-tr-iY4"/>
+                <outlet property="signInButton" destination="nbN-8O-DWT" id="3gX-ZD-EyN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,21 +32,21 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" toolTip="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5u-Fi-IoD">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" toolTip="Password" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5u-Fi-IoD">
                     <rect key="frame" x="16" y="462" width="361" height="48"/>
                     <color key="backgroundColor" name="CardColor"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <accessibility key="accessibilityConfiguration" hint="Password" identifier="passwordTexeInput" label="Password"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="Quc-uU-yOv"/>
                         <constraint firstAttribute="height" constant="48" id="uFL-fg-rZs"/>
                     </constraints>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="systemBackgroundColor"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JOG-o9-NY9">
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JOG-o9-NY9">
                     <rect key="frame" x="16" y="402" width="361" height="48"/>
                     <color key="backgroundColor" name="CardColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <accessibility key="accessibilityConfiguration" identifier="emailTextInput"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="Jo1-XK-rXb"/>
@@ -62,6 +66,19 @@
                         <color key="baseForegroundColor" systemColor="labelColor"/>
                         <color key="baseBackgroundColor" name="primaryColor"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="kca-tY-cn0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCf-hw-ojZ">
+                    <rect key="frame" x="16" y="522" width="147" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Create Account!" subtitle="">
+                        <color key="baseForegroundColor" name="primaryColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="createAccountButtonPressed:" destination="-1" eventType="touchUpInside" id="UNR-19-h0o"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -72,11 +89,13 @@
                 <constraint firstItem="nbN-8O-DWT" firstAttribute="top" secondItem="y5u-Fi-IoD" secondAttribute="bottom" constant="220" id="ASw-1i-dRE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="98e-Pf-hqc" secondAttribute="trailing" constant="16" id="CT4-QW-X6X"/>
                 <constraint firstItem="98e-Pf-hqc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="D8U-xX-GRr"/>
+                <constraint firstItem="CCf-hw-ojZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="F0e-qt-bFO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y5u-Fi-IoD" secondAttribute="trailing" constant="16" id="GIB-Or-5xB"/>
                 <constraint firstItem="98e-Pf-hqc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Kaf-1r-cyz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LrH-Bd-jAX" secondAttribute="trailing" constant="16" id="Utk-0G-8ms"/>
                 <constraint firstItem="JOG-o9-NY9" firstAttribute="top" secondItem="LrH-Bd-jAX" secondAttribute="bottom" constant="83" id="WsW-fK-yXT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y5u-Fi-IoD" secondAttribute="trailing" constant="16" id="cPs-u6-IWd"/>
+                <constraint firstItem="CCf-hw-ojZ" firstAttribute="top" secondItem="y5u-Fi-IoD" secondAttribute="bottom" constant="12" id="euk-Lg-j08"/>
                 <constraint firstItem="LrH-Bd-jAX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="fSB-oP-Sde"/>
                 <constraint firstItem="y5u-Fi-IoD" firstAttribute="top" secondItem="JOG-o9-NY9" secondAttribute="bottom" constant="12" id="flY-XZ-DoV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nbN-8O-DWT" secondAttribute="trailing" constant="16" id="jj0-EB-AG5"/>
@@ -102,6 +121,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

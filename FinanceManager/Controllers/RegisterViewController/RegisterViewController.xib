@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="FinanceManager" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextInput" destination="T6h-9r-4Yz" id="xoz-qN-8uT"/>
+                <outlet property="passwordTextInput" destination="9sq-CF-2Kp" id="6WF-1Y-bBo"/>
+                <outlet property="repeatPasswordTextInput" destination="4zQ-fg-nsM" id="2yu-iN-epG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -65,7 +68,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zep-wl-tQP">
-                                    <rect key="frame" x="16" y="660" width="361" height="48"/>
+                                    <rect key="frame" x="16" y="670" width="361" height="48"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="48" id="DOg-ds-4BO"/>
                                     </constraints>
@@ -74,6 +77,19 @@
                                         <color key="baseForegroundColor" systemColor="labelColor"/>
                                         <color key="baseBackgroundColor" name="primaryColor"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="signUpButtonPressed:" destination="-1" eventType="touchUpInside" id="hxb-2v-fLl"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIi-3B-shE">
+                                    <rect key="frame" x="16" y="522" width="76" height="35"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                        <color key="baseForegroundColor" name="primaryColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="QLN-yP-JOC"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" name="background"/>
@@ -88,12 +104,14 @@
                                 <constraint firstItem="swV-4c-rpc" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="OUl-in-VU3"/>
                                 <constraint firstItem="T6h-9r-4Yz" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="QM0-ZS-dsa"/>
                                 <constraint firstAttribute="trailing" secondItem="swV-4c-rpc" secondAttribute="trailing" constant="16" id="SYM-zA-gWM"/>
+                                <constraint firstItem="GIi-3B-shE" firstAttribute="top" secondItem="4zQ-fg-nsM" secondAttribute="bottom" constant="12" id="Ua2-dz-mMH"/>
                                 <constraint firstItem="zep-wl-tQP" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="Uti-jL-tl8"/>
                                 <constraint firstItem="AET-4X-gCw" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="XAi-mN-eY8"/>
                                 <constraint firstItem="4zQ-fg-nsM" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="ba9-ny-uus"/>
                                 <constraint firstItem="4zQ-fg-nsM" firstAttribute="top" secondItem="9sq-CF-2Kp" secondAttribute="bottom" constant="12" id="fGh-Ea-fLs"/>
                                 <constraint firstItem="9sq-CF-2Kp" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="jta-zH-3WQ"/>
-                                <constraint firstItem="zep-wl-tQP" firstAttribute="top" secondItem="4zQ-fg-nsM" secondAttribute="bottom" constant="150" id="kGp-Eg-RdL"/>
+                                <constraint firstItem="GIi-3B-shE" firstAttribute="leading" secondItem="vfx-s9-TcX" secondAttribute="leading" constant="16" id="jyc-9k-z8N"/>
+                                <constraint firstItem="zep-wl-tQP" firstAttribute="top" secondItem="4zQ-fg-nsM" secondAttribute="bottom" constant="160" id="kGp-Eg-RdL"/>
                                 <constraint firstAttribute="trailing" secondItem="zep-wl-tQP" secondAttribute="trailing" constant="16" id="ojy-Am-fOC"/>
                                 <constraint firstItem="9sq-CF-2Kp" firstAttribute="top" secondItem="T6h-9r-4Yz" secondAttribute="bottom" constant="12" id="y8R-hG-SUg"/>
                             </constraints>
