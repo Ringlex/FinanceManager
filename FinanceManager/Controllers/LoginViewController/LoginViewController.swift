@@ -26,6 +26,8 @@ class LoginViewController: UIViewController {
         loginPasswordTextField.attributedPlaceholder = preparePlaceholder(name: "Password")
     }
     
+    
+    
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         
     }
