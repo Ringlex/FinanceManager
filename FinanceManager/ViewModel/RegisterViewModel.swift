@@ -18,12 +18,17 @@ class RegisterViewModel {
                 print(e)
                 self.isSuccess.value = false
             } else {
+                self.createUserInDB(userData: authResult)
                 self.isSuccess.value =  true
             }
             
         }
+    }
+    
+    func createUserInDB(userData: AuthDataResult?) {
+        let user = User(email: userData?.user.email ?? "", userName: userData?.user.email ?? "")
         
-        
+        FStore.financeDB.collection(FStore.users).document(userData!.user.uid).setData(user.map)
     }
     
 }

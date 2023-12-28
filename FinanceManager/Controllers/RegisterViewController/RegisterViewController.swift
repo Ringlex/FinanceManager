@@ -57,6 +57,8 @@ class RegisterViewController: UIViewController {
                     snackBar(with: self, text: "Something went wrong!", isError: true)
                 }
             }
+            
+            viewModel.isSuccess.value = nil
         }
     }
     

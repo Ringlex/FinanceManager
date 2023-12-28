@@ -12,9 +12,19 @@ class User {
     let email : String
     let userName : String
     
+    var map: [String : Any] {
+        return [
+            "email" : email,
+            "userName" : userName
+            
+        ]
+    }
+    
     init(email: String, userName: String) {
         self.email = email
         self.userName = userName
     }
+    
+    
 }
 
