@@ -29,6 +29,17 @@
 		5043687B2B3CB94500454903 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043687A2B3CB94500454903 /* RegisterViewModel.swift */; };
 		5043687D2B3CBF9500454903 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043687C2B3CBF9500454903 /* Observable.swift */; };
 		504368822B3D9A4A00454903 /* FStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504368812B3D9A4A00454903 /* FStore.swift */; };
+		5043688D2B3DDCC100454903 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043688B2B3DDCC100454903 /* WalletViewController.swift */; };
+		5043688E2B3DDCC100454903 /* WalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5043688C2B3DDCC100454903 /* WalletViewController.xib */; };
+		504368912B3DDCD600454903 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043688F2B3DDCD600454903 /* AddExpenseViewController.swift */; };
+		504368922B3DDCD600454903 /* AddExpenseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504368902B3DDCD600454903 /* AddExpenseViewController.xib */; };
+		504368952B3DDCE200454903 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504368932B3DDCE200454903 /* SettingsViewController.swift */; };
+		504368962B3DDCE200454903 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504368942B3DDCE200454903 /* SettingsViewController.xib */; };
+		504368992B3DE04700454903 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504368972B3DE04700454903 /* DashboardViewController.swift */; };
+		5082C0772B44384C007992E7 /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082C0762B44384C007992E7 /* TotalView.swift */; };
+		5082C0792B44385F007992E7 /* TotalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5082C0782B44385F007992E7 /* TotalView.xib */; };
+		50EAC3B42B44AD4C00425EA5 /* SavedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EAC3B32B44AD4C00425EA5 /* SavedCardView.swift */; };
+		50EAC3B62B44AD5E00425EA5 /* SavedCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50EAC3B52B44AD5E00425EA5 /* SavedCardView.xib */; };
 		CC44F2ED1A862A5D038C220F /* Pods_FinanceManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2C601F4049A654D137B3E4 /* Pods_FinanceManager.framework */; };
 		EDE5D23687A10876FA60BD66 /* Pods_FinanceManager_FinanceManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFA51338022652E29265428 /* Pods_FinanceManager_FinanceManagerUITests.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +90,17 @@
 		5043687A2B3CB94500454903 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		5043687C2B3CBF9500454903 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		504368812B3D9A4A00454903 /* FStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FStore.swift; sourceTree = "<group>"; };
+		5043688B2B3DDCC100454903 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		5043688C2B3DDCC100454903 /* WalletViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewController.xib; sourceTree = "<group>"; };
+		5043688F2B3DDCD600454903 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		504368902B3DDCD600454903 /* AddExpenseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddExpenseViewController.xib; sourceTree = "<group>"; };
+		504368932B3DDCE200454903 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		504368942B3DDCE200454903 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		504368972B3DE04700454903 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		5082C0762B44384C007992E7 /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
+		5082C0782B44385F007992E7 /* TotalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalView.xib; sourceTree = "<group>"; };
+		50EAC3B32B44AD4C00425EA5 /* SavedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardView.swift; sourceTree = "<group>"; };
+		50EAC3B52B44AD5E00425EA5 /* SavedCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedCardView.xib; sourceTree = "<group>"; };
 		603430B662D321983FA54EE6 /* Pods-FinanceManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceManager.release.xcconfig"; path = "Target Support Files/Pods-FinanceManager/Pods-FinanceManager.release.xcconfig"; sourceTree = "<group>"; };
 		8D2C601F4049A654D137B3E4 /* Pods_FinanceManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFA51338022652E29265428 /* Pods_FinanceManager_FinanceManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceManager_FinanceManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +195,10 @@
 		504368572B37700800454903 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5043688A2B3DDCA900454903 /* SettingsViewController */,
+				504368892B3DDC8A00454903 /* AddExpenseViewController */,
+				504368882B3DDC7B00454903 /* WalletViewController */,
+				504368832B3DDAF700454903 /* DashboardViewController */,
 				504368652B37859D00454903 /* RegisterViewController */,
 				5043685C2B37732D00454903 /* LoginViewController */,
 			);
@@ -182,6 +208,8 @@
 		504368582B37701300454903 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				50EAC3B22B44ACFB00425EA5 /* SavedCard */,
+				50EAC3B12B44ACDA00425EA5 /* TotalCard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +302,59 @@
 				504368812B3D9A4A00454903 /* FStore.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		504368832B3DDAF700454903 /* DashboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				504368972B3DE04700454903 /* DashboardViewController.swift */,
+			);
+			path = DashboardViewController;
+			sourceTree = "<group>";
+		};
+		504368882B3DDC7B00454903 /* WalletViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5043688B2B3DDCC100454903 /* WalletViewController.swift */,
+				5043688C2B3DDCC100454903 /* WalletViewController.xib */,
+			);
+			path = WalletViewController;
+			sourceTree = "<group>";
+		};
+		504368892B3DDC8A00454903 /* AddExpenseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5043688F2B3DDCD600454903 /* AddExpenseViewController.swift */,
+				504368902B3DDCD600454903 /* AddExpenseViewController.xib */,
+			);
+			path = AddExpenseViewController;
+			sourceTree = "<group>";
+		};
+		5043688A2B3DDCA900454903 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				504368932B3DDCE200454903 /* SettingsViewController.swift */,
+				504368942B3DDCE200454903 /* SettingsViewController.xib */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		50EAC3B12B44ACDA00425EA5 /* TotalCard */ = {
+			isa = PBXGroup;
+			children = (
+				5082C0762B44384C007992E7 /* TotalView.swift */,
+				5082C0782B44385F007992E7 /* TotalView.xib */,
+			);
+			path = TotalCard;
+			sourceTree = "<group>";
+		};
+		50EAC3B22B44ACFB00425EA5 /* SavedCard */ = {
+			isa = PBXGroup;
+			children = (
+				50EAC3B32B44AD4C00425EA5 /* SavedCardView.swift */,
+				50EAC3B52B44AD5E00425EA5 /* SavedCardView.xib */,
+			);
+			path = SavedCard;
 			sourceTree = "<group>";
 		};
 		8953522E19722E56EB07FA79 /* Frameworks */ = {
@@ -408,10 +489,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EAC3B62B44AD5E00425EA5 /* SavedCardView.xib in Resources */,
+				5082C0792B44385F007992E7 /* TotalView.xib in Resources */,
 				504368602B37735600454903 /* LoginViewController.xib in Resources */,
+				504368962B3DDCE200454903 /* SettingsViewController.xib in Resources */,
+				5043688E2B3DDCC100454903 /* WalletViewController.xib in Resources */,
 				504368642B37792A00454903 /* Assets.xcassets in Resources */,
 				504368762B3C658F00454903 /* GoogleService-Info.plist in Resources */,
 				504368342B34D3DB00454903 /* LaunchScreen.storyboard in Resources */,
+				504368922B3DDCD600454903 /* AddExpenseViewController.xib in Resources */,
 				504368692B3785B800454903 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,11 +634,17 @@
 				5043687B2B3CB94500454903 /* RegisterViewModel.swift in Sources */,
 				5043686D2B384D7000454903 /* User.swift in Sources */,
 				5043682A2B34D3D900454903 /* SceneDelegate.swift in Sources */,
+				504368912B3DDCD600454903 /* AddExpenseViewController.swift in Sources */,
+				5082C0772B44384C007992E7 /* TotalView.swift in Sources */,
 				5043686F2B384D8C00454903 /* Finance.swift in Sources */,
+				50EAC3B42B44AD4C00425EA5 /* SavedCardView.swift in Sources */,
 				5043686B2B384D3900454903 /* LoginViewModel.swift in Sources */,
+				504368952B3DDCE200454903 /* SettingsViewController.swift in Sources */,
 				504368822B3D9A4A00454903 /* FStore.swift in Sources */,
 				504368682B3785B800454903 /* RegisterViewController.swift in Sources */,
 				504368742B3C259100454903 /* TextInputHelper.swift in Sources */,
+				5043688D2B3DDCC100454903 /* WalletViewController.swift in Sources */,
+				504368992B3DE04700454903 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,8 +818,8 @@
 				INFOPLIST_FILE = FinanceManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -757,8 +849,8 @@
 				INFOPLIST_FILE = FinanceManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
