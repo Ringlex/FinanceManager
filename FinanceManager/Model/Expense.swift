@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Expence {
+class Expense {
     var place : String
     var amount : Double
     

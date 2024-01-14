@@ -10,6 +10,7 @@ target 'FinanceManager' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'CustomToastView-swift'
+  pod 'Charts'
 
   target 'FinanceManagerTests' do
     inherit! :search_paths

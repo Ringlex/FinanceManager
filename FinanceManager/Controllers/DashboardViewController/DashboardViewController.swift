@@ -21,8 +21,6 @@ class DashboardViewController: UITabBarController {
         let walletVC = WalletViewController()
         let settingsVC = SettingsViewController()
         
-        //view.topAnchor
-        
         walletVC.tabBarItem.image = UIImage(systemName: "house.fill")
         settingsVC.tabBarItem.image = UIImage(systemName: "gearshape")
         

@@ -23,10 +23,10 @@ class SavedCardView: UIView {
     func viewInit() {
         let viewCornerRadius = 20.0
         
-        let xibView = Bundle.main.loadNibNamed("SavedCardView", owner: self)![0] as! UIView
-        xibView.frame = self.bounds
-        xibView.layer.cornerRadius = viewCornerRadius
-        addSubview(xibView)
+        let savedView = Bundle.main.loadNibNamed("SavedCardView", owner: self)![0] as! UIView
+        savedView.frame = self.bounds
+        savedView.layer.cornerRadius = viewCornerRadius
+        addSubview(savedView)
     }
 
 }
