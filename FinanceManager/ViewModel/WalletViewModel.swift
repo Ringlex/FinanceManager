@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import FirebaseAuth
+
+
 
 class WalletViewModel {
+   
     
     let expensesList = [Expense(place: "Zara", amount: 10.99), Expense(place: "Biedronka", amount: 101.99),Expense(place: "Sinsey", amount: 80.99)]
     
@@ -19,6 +23,11 @@ class WalletViewModel {
     
     func numberOfRowsTodaysExepensesList() -> Int {
         self.todaysExpensesList.count
+    }
+    
+    func signOut() {
+        try! Auth.auth().signOut()
+        
     }
     
 }

@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var loginViewModel = LoginViewModel()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -18,15 +19,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        let navigationController = UINavigationController(rootViewController: LoginViewController())
+        let user = loginViewModel.checkIfUserIsAuthenticated()
         let window = UIWindow(windowScene: windowScene)
-        let navigationController = UINavigationController(rootViewController: DashboardViewController())
+       
+        
         window.rootViewController = navigationController
-        
-        
+
         self.window = window
         window.makeKeyAndVisible()
+        
+        if user != nil{
+            navigationController.isNavigationBarHidden = true
+            navigationController.pushViewController(DashboardViewController(), animated: false)
+        }
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

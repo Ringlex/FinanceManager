@@ -31,16 +31,29 @@ class WalletViewController: UIViewController {
     
     func configWalletView() {
         let buttonRadius = 15.0
+        let todaysExpensesListRadius = 20.0
         
         allButton.layer.cornerRadius = buttonRadius
         ascendingButton.layer.cornerRadius = buttonRadius
         descendingButton.layer.cornerRadius = buttonRadius
-        todaysExpensesView.layer.cornerRadius = 20
-        todaysExpensesList.layer.cornerRadius = 20
+        todaysExpensesView.layer.cornerRadius = todaysExpensesListRadius
+        todaysExpensesList.layer.cornerRadius = todaysExpensesListRadius
         todaysExpensesList.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
         
         setupLastExpensesList()
        
     }
 
+    @IBAction func searchButtonPressed(_ sender: Any) {
+        
+        viewModel.signOut()
+       
+        DispatchQueue.main.async {
+
+            self.navigationController?.popToRootViewController(animated: true)
+            
+            
+        }
+      
+    }
 }

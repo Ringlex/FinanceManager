@@ -18,14 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         let db = Firestore.firestore()
+        var navigationController = UINavigationController(rootViewController: LoginViewController())
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let navigationController = UINavigationController(rootViewController: DashboardViewController())
+        
+       // let navigationController = UINavigationController(rootViewController: LoginViewController())
         window.rootViewController = navigationController
+        
         window.makeKeyAndVisible()
         
         self.window = window
-        
         return true
     }
 

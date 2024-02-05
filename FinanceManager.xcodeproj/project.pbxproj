@@ -178,6 +178,7 @@
 		504368262B34D3D900454903 /* FinanceManager */ = {
 			isa = PBXGroup;
 			children = (
+				50EAC3CF2B55A7B800425EA5 /* Services */,
 				5043687E2B3D731F00454903 /* Core */,
 				5043687F2B3D9A1F00454903 /* Utils */,
 				5043685B2B37703400454903 /* Resources */,
@@ -403,6 +404,13 @@
 				50EAC3CC2B52C4DD00425EA5 /* TodaysExpensesCell.xib */,
 			);
 			path = TodaysExpensesCell;
+			sourceTree = "<group>";
+		};
+		50EAC3CF2B55A7B800425EA5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		8953522E19722E56EB07FA79 /* Frameworks */ = {

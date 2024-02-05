@@ -27,9 +27,6 @@ class DashboardViewController: UITabBarController {
         walletVC.tabBarItem.title = "Wallet"
         settingsVC.tabBarItem.title = "Settings"
         
-        let walletNavigation = UINavigationController(rootViewController: walletVC)
-        let settingsNavigation = UINavigationController(rootViewController: settingsVC)
-        
         tabBar.tintColor = UIColor.white
         tabBar.unselectedItemTintColor = UIColor(named: "inactiveColor")
         tabBar.backgroundColor = UIColor(named: "cardColor")
@@ -37,7 +34,7 @@ class DashboardViewController: UITabBarController {
         tabBar.itemSpacing = UIScreen.main.bounds.width / 4
        
         
-        setViewControllers([walletNavigation,  settingsNavigation], animated: true)
+        setViewControllers([walletVC,  settingsVC], animated: true)
     }
     
     func setupMiddleButton() {
@@ -53,5 +50,4 @@ class DashboardViewController: UITabBarController {
 
         self.view.layoutIfNeeded()
     }
-    
 }
